@@ -23,5 +23,4 @@ Parameter estimation was performed via the MCMC approach implemented in rstan 2.
 
 ## Dependencies
 ### R 4.1.2
-### Racmacs
-でっていう
+### Rstan 2.26.1
