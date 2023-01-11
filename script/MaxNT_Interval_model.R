@@ -4,7 +4,7 @@ library(dplyr)
 library(openxlsx)
 library(rstan)
 
-setwd("/Users/sho/Documents/R/20220323 seroepi/20230110 github")
+setwd()
 
 d <- read.xlsx("input/Table S3.xlsx", startRow = 2) %>% 
   mutate(GID=case_when(
