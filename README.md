@@ -11,12 +11,12 @@ For each exposure group, we estimated the neutralization titer and time of vacci
 - αv ~ Normal (2.5, 1) [0, 5]
 - βv ~ Student_t (4, 0.05, 0.1) [0, 1]
 - σ_µv ~ Student_t (4, 0, 0.5) [0, ∞]
-- -script
-  -MaxNT_Interval_model.R :main script
-  -interval_model.stan :stan model file
--input
-  -Table S3.xlsx : Raw data available from URL:XXX
--output
+- script
+- MaxNT_Interval_model.R :main script
+- interval_model.stan :stan model file
+- input
+- Table S3.xlsx : Raw data available from URL:XXX
+- output
 
 The values in square brackets denote the truncation bounds of the distributions. The explanatory variable was time, tn, and the outcome variable was NTnvt, which represented the neutralization titers against the target virus v in participant n at time t. A non-informative prior was set for the standard distribution σ_NTv. The parameters αv and βv controlled the intercept and the steepness of the logistic function, respectively. The mean parameter for neutralization titers against target virus v according to the exposure history h, µhv, was generated from a normal distribution with hyperparameters of the mean, µv, and standard deviation, σ_µv. For the distribution generating βv and σ_µv, we used a Student’s t distribution with four degrees of freedom, instead of a normal distribution, to reduce the effects of outlier values of βv and σ_µv.
 The time interval of days to 90% maximum neutralization titers against each virus (tMNT90v) was calculated according to the parameters αv and βv as follows:
