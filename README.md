@@ -25,14 +25,14 @@ Parameter estimation was performed via the Markov chain Monte Carlo (MCMC) appro
   - MaxNT_Interval_model.R :main script
   - interval_model.stan :stan model file
 - input
-  - Table S3.xlsx : Raw data available from URL:XXX
+  - Table S3.xlsx : Raw data available from Miyamoto et al., 2023.
 - output
 
 ## Dependencies
--R version 4.1.2 (2021-11-01)
--R packages:
-  -rstan_2.26.13
-  -dplyr_1.0.9
-  -openxlsx_4.2.5.1
+- R version 4.1.2 (2021-11-01)
+- R packages:
+  - rstan_2.26.13
+  - dplyr_1.0.9
+  - openxlsx_4.2.5.1
 
 
