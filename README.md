@@ -22,10 +22,10 @@ Parameter estimation was performed via the Markov chain Monte Carlo (MCMC) appro
 
 ## Contents
 - script
-- MaxNT_Interval_model.R :main script
-- interval_model.stan :stan model file
+  - MaxNT_Interval_model.R :main script
+  - interval_model.stan :stan model file
 - input
-- Table S3.xlsx : Raw data available from URL:XXX
+  - Table S3.xlsx : Raw data available from URL:XXX
 - output
 
 ## Dependencies
