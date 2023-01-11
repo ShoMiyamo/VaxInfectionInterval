@@ -18,3 +18,20 @@ The time interval of days to 90% maximum neutralization titers against each viru
 - tMNT90v = log(9αv) / βv
 
 Parameter estimation was performed via the Markov chain Monte Carlo (MCMC) approach implemented in rstan 2.26.1 (https://mc-stan.org). Four independent MCMC chains were run with 5,000 steps in the warm-up and sampling iterations, with subsampling every five iterations.
+
+## Contents
+-script
+  -MaxNT_Interval_model.R :main script
+  -interval_model.stan :stan model file
+-input
+  -Table S3.xlsx : Raw data available from URL:XXX
+-output
+
+## Dependencies
+-R version 4.1.2 (2021-11-01)
+-R packages:
+  -rstan_2.26.13
+  -dplyr_1.0.9
+  -openxlsx_4.2.5.1
+
+
