@@ -1,7 +1,7 @@
 # A Bayesian hierarchical model to estimate maximum cross-neutralizing titers against SARS-CoV-2 variants
 
 ## Summary
-This repository contains computational codes used in [Miyamoto et al., 2023](https://XXX).
+This repository contains computational codes used in [Miyamoto et al., 2023](https://doi.org/10.1101/2023.02.08.23285673).
 
 For each exposure group, we estimated the neutralization titer and time of vaccination using a Bayesian hierarchical model. The log10 neutralization titer (NT) after breakthrough infection or booster vaccination was described using a three-parameter logistic model for each time interval between the second vaccination and the third exposure (vaccination or breakthrough infection). We inferred population means (μv) separately for neutralization titers against the ancestral strain, BA.1, BA.2, BA.2.75, BA.5, and BQ.1.1. We used a hierarchical structure to describe the distribution of µhv for each exposure group. Arrays in the model index over one or more indices: H=3 exposure history h; N=108 participants n; V=6 target viruses v. The model was as follows:
 
@@ -24,7 +24,7 @@ Parameter estimation was performed via the Markov chain Monte Carlo (MCMC) appro
   - MaxNT_Interval_model.R :main script
   - interval_model.stan :stan model file
 - input
-  - Table S3.xlsx : Raw data available from [Miyamoto et al., 2023](https://XXX).
+  - Table S3.xlsx : Raw data available from [Miyamoto et al., 2023](https://doi.org/10.1101/2023.02.08.23285673).
 - output
 
 ## Dependencies
